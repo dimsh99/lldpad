@@ -56,38 +56,38 @@ This cookbooks contains recipes and custom resource to install and configure lld
     <td><tt>['lldpad']['sysName']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit System Name TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['sysDesc']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit System Description TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['sysCap']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit System Caption TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['portDesc']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit Port Description TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['portID']['enableTx']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit Port ID TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['portID']['subtype']</tt></td>
     <td>Symbol</td>
-    <td>Value of Port ID TLV to be transmitted
-        :PORT_ID_INTERFACE_NAME - Interface name
-        :PORT_ID_MAC_ADDRESS - Mac address
+    <td>Value of Port ID TLV to be transmitted<br>
+        :PORT_ID_INTERFACE_NAME - Interface name<br>
+        :PORT_ID_MAC_ADDRESS - Mac address<br>
         :PORT_ID_NETWORK_ADDRESS - IP address</td>
     <td><tt>:PORT_ID_INTERFACE_NAME</tt></td>
   </tr>
@@ -95,14 +95,14 @@ This cookbooks contains recipes and custom resource to install and configure lld
     <td><tt>['lldpad']['chassisID']['enableTx']</tt></td>
     <td>Boolean</td>
     <td>Whether to transmit Chassis ID TLV</td>
-    <td><tt>%w(docker)</tt></td>
+    <td><tt>true</tt></td>
   </tr>
   <tr>
     <td><tt>['lldpad']['chassisID']['subtype']</tt></td>
     <td>Symbol</td>
-    <td>Value of Port ID TLV to be transmitted
-        :CHASSIS_ID_INTERFACE_NAME - Interface name
-        :CHASSIS_ID_MAC_ADDRESS - Mac address
+    <td>Value of Port ID TLV to be transmitted<br>
+        :CHASSIS_ID_INTERFACE_NAME - Interface name<br>
+        :CHASSIS_ID_MAC_ADDRESS - Mac address<br>
         :CHASSIS_ID_NETWORK_ADDRESS - IP address</td>
     <td><tt>:PORT_ID_MAC_ADDRESS</tt></td>
   </tr>
