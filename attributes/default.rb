@@ -1,0 +1,12 @@
+default['lldpad']['install_on_vm_guest'] = false
+default['lldpad']['disabled_int_type'] = %w(team bond)
+default['lldpad']['ignored_int_type'] = %w(docker)
+default['lldpad']['adminStatus'] = :rxtx
+default['lldpad']['sysName'] = true
+default['lldpad']['sysDesc'] = true
+default['lldpad']['sysCap'] = true
+default['lldpad']['portDesc'] = true
+default['lldpad']['portID']['enableTx'] = true
+default['lldpad']['portID']['subtype'] = :PORT_ID_INTERFACE_NAME
+default['lldpad']['chassisID']['enableTx'] = true
+default['lldpad']['chassisID']['subtype'] = :CHASSIS_ID_MAC_ADDRESS
