@@ -82,6 +82,9 @@ action :apply do
   [:sysName, :sysCap, :sysDesc, :portDesc, :portID, :chassisID].each do |vtl|
     vtl_args = send(vtl).is_a?(Hash) ? send(vtl) : { enableTx: send(vtl) }
     vtl_args.each_pair do |arg_name, arg_val|
+      # AFAIK: lldptool in Ubuntu 12.0.4 supports only enableTx
+      next if arg_name != 'enableTx' && node['platform'] == 'ubuntu' && \
+              node['platform_version'].to_i == 12
       next if get_vtl(interface, vtl, arg_name) == arg_val
       converge_by("Set #{vtl} #{arg_name} to #{arg_val}") do
         set_vtl(interface, vtl.to_s, arg_name, arg_val)
