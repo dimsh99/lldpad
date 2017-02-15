@@ -1,0 +1,4 @@
+LineLength:
+  Max: 120
+BlockLength:
+  Max: 40
