@@ -6,8 +6,11 @@ This cookbooks contains recipes and custom resource to install and configure lld
 
 ### Platforms
 - `centos`     - not fully tested on centos, but should work
-- `redhat`     - not fully tested on centos, but should work
-- `scientific` - not fully tested on centos, but should work
+- `redhat`     - not fully tested on redhat, but should work
+- `fedora`     - not fully tested on redhat, but should work
+- `scientific` - not fully tested on scientific, but should work
+- `ubuntu`     - not fully tested on ubuntu, but should work
+- `debian`     - not fully tested on debian, but should work
 
 ### Chef
 
