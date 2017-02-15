@@ -3,7 +3,7 @@
 This file is used to list changes made in each version of the lldpad cookbook.
 
 ## 0.1.0
-- [your_name] - Initial release of lldpad
+- [dimsh99] - Initial release of lldpad
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
