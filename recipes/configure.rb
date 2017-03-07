@@ -6,7 +6,9 @@ end
 
 node['network']['interfaces'].each_pair do |iface_name, iface_desc|
   next unless iface_desc['encapsulation'] == 'Ethernet'
-  next if node['lldpad']['ignored_int_type'].include?(iface_desc['type'])
+  next if node['lldpad']['ignored_int_type'].include?(iface_desc['type']) ||
+          iface_desc['state'] == 'down' ||
+          iface_desc['vlan']
   if node['lldpad']['disabled_int_type'].include?(iface_desc['type'])
     lldpad iface_name do
       adminStatus :disabled
