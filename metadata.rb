@@ -14,3 +14,5 @@ supports 'redhat', '>= 6.0'
 supports 'fedora', '>= 25.0'
 supports 'ubuntu', '>=12.0.4'
 supports 'debian', '>=7.11'
+
+depends 'ohai'
