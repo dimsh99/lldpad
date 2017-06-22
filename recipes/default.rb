@@ -7,5 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe 'lldpad::install'
-include_recipe 'lldpad::configure'
+include_recipe "#{cookbook_name}::install"
+include_recipe "#{cookbook_name}::configure"
+include_recipe "#{cookbook_name}::plugin"
