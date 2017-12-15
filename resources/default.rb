@@ -41,7 +41,7 @@ property :chassisID, kind_of: Hash, default: node['lldpad']['chassisID'].to_h,
                            return false unless value.key?('subtype') && \
                                                CHASSISID_SUBTYPE.include?(value['subtype'])
                            true
-                         end
+                         end,
                      }
 property :portID, kind_of: Hash, default: node['lldpad']['portID'].to_h,
                   coerce: proc { |value|
@@ -69,7 +69,7 @@ property :portID, kind_of: Hash, default: node['lldpad']['portID'].to_h,
                         false unless value.key?('subtype') && \
                                      PORTID_SUBTYPE.include?(value['subtype'])
                         true
-                      end
+                      end,
                   }
 default_action :apply
 

@@ -6,5 +6,5 @@ gemfile:
 - Gemfile
 script:
 - bundle exec foodcritic --epic-fail any .
-- bundle exec rubocop
+- bundle exec cookstyle
 - bundle exec rspec

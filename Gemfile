@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 12.5'
+gem 'chef', '~> 12.21'
 gem 'ohai', '~> 8.4'
 
 group :lint do
   gem 'foodcritic', '~> 6.0'
   gem 'rainbow', '< 2.0'
   gem 'rspec'
-  gem 'rubocop', '~> 0.38'
+  gem 'rubocop', '~> 0.49'
 end
 
 group :packaging do

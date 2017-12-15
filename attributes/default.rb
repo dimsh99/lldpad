@@ -1,6 +1,7 @@
 default['lldpad']['install_on_vm_guest'] = false
 default['lldpad']['disabled_int_type'] = %w(team bond)
 default['lldpad']['ignored_int_type'] = %w(docker)
+default['lldpad']['ignored_int_name'] = %w(veth.*)
 default['lldpad']['adminStatus'] = :rxtx
 default['lldpad']['sysName'] = true
 default['lldpad']['sysDesc'] = true
