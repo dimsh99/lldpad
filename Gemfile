@@ -1,35 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 13.0'
-gem 'ohai', '~> 13.4'
-
 group :lint do
   gem 'foodcritic', '~> 6.0'
   gem 'rainbow', '< 2.0'
   gem 'rspec'
-  gem 'rubocop', '~> 0.49'
   gem 'cookstyle', '~> 2.1.0'
 end
 
-group :packaging do
-  gem 'stove'
-end
-
 group :unit do
-  gem 'berkshelf', '~> 4.2'
-  gem 'chefspec', '~> 4.2'
+  gem 'berkshelf', '~> 6.5'
+  gem 'chefspec', '~> 4.7'
 end
 
 group :kitchen_common do
-  gem 'test-kitchen', '~> 1.2'
+  gem 'test-kitchen', '~> 1.19'
 end
 
 group :kitchen_vagrant do
-  gem 'kitchen-vagrant', '~> 0.11'
-end
-
-group :kitchen_cloud do
-  gem 'kitchen-ec2'
+  gem 'kitchen-vagrant', '~> 1.0'
 end
 
 group :development do
