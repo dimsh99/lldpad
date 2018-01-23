@@ -1,8 +1,6 @@
 extend LldpadCookbook::Helpers
 
-if am_i_vm_guest?
-  return unless node['lldpad']['install_on_vm_guest']
-end
+return if am_i_vm_guest? && !node['lldpad']['install_on_vm_guest']
 
 node['network']['interfaces'].each_pair do |iface_name, iface_desc|
   next unless iface_desc['encapsulation'] == 'Ethernet'
